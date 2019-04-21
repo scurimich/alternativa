@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__mincontainer">
+				<a class="header__logo">
+					<img src="img/logo.png" alt="" class="header__logoimg">
+				</a>
+				<ul class="header__menu menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Обучение</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Блог</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">О школе</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Контакты</a>
+					</li>
+				</ul>
+				<div class="header__hiddenmenu hiddenmenu">
+					<span class="hiddenmenu__icon"></span>
+					<ul class="hiddenmenu__list">
+						<li class="hiddenmenu__item">
+							<a href="#" class="hiddenmenu__link">Обучение</a>
+						</li>
+						<li class="hiddenmenu__item">
+							<a href="#" class="hiddenmenu__link">Блог</a>
+						</li>
+						<li class="hiddenmenu__item">
+							<a href="#" class="hiddenmenu__link">О школе</a>
+						</li>
+						<li class="hiddenmenu__item">
+							<a href="#" class="hiddenmenu__link">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<span class="header__phone">8 800 333 55 47</span>
+			</div>
+		</div>		
+	</header>
+	<main class="main">
+		<div class="top">
+			<img src="img/main-header.png" alt="" class="top__img">
+			<div class="container">
+				<h1 class="top__caption">Профессиональное обучение массажу</h1>
+				<span class="top__date">12 – 16 мая 2017 года</span>
+				<h2 class="top__smcaption">Некосметическая коррекция лица</h2>
+				<div class="top__pricecont">
+					<span class="top__price">Интенсивный курс профессиональной 
+	техники массажа – <span class="top__price top__price_orange">12 000 р.</span></span>
+				</div>
+				<a href="#" class="top__button">Записаться</a>
+			</div>
+		</div>
+		<div class="events">
+			<div class="container">
+				<h3 class="events__caption">Ближайшие события</h3>
+				<ul class="events__navigation navigation slider-nav" data-slider="events">
+					<li class="navigation__item slider-nav-button active"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+				</ul>
+				<div class="events__container slider" data-slides="events" data-number="3">
+					<ul class="events__eventlist eventlist slides">
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event1.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date eventlist__date_starred">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Описание того, что мы 
+								чувствуем</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event2.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Курс «Массаж передней 
+								поверхности ног»</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event3.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Экзамен на инструктора 
+								тренажерного зала</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event1.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date eventlist__date_starred">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Описание того, что мы 
+								чувствуем</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event2.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Курс «Массаж передней 
+								поверхности ног»</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event3.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Экзамен на инструктора 
+								тренажерного зала</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event1.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date eventlist__date_starred">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Описание того, что мы 
+								чувствуем</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event2.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Курс «Массаж передней 
+								поверхности ног»</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+						<li class="eventlist__item slide">
+							<div class="eventlist__imgcont">
+								<img src="img/event3.png" alt="" class="eventlist__img">
+							</div>
+							<div class="eventlist__descript">
+								<span class="eventlist__date">17 – 18 апреля 2017</span>
+								<span class="eventlist__name">Экзамен на инструктора 
+								тренажерного зала</span>
+								<span class="eventlist__learnmore">Узнать больше</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="events__navigation events__navigation_hidden navigation">
+					<li class="navigation__item"></li>
+					<li class="navigation__item navigation__item_active"></li>
+					<li class="navigation__item"></li>
+					<li class="navigation__item"></li>
+					<li class="navigation__item"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="videopart">
+			<div class="container">
+				<div class="videopart__container">
+					<div class="videopart__mincontainer">
+						<span class="videopart__lockvideo">Закрытое видео</span>
+						<h3 class="videopart__caption">Бриллиантовые руки</h3>
+						<span class="videopart__explan">Получи 10 рабочих действий, 
+которые принесут тебе результат уже сегодня</span>
+						<span class="videopart__get">Получить бесплатно доступ к закрытому видео </span>
+						<form action="#" class="videopart__form">
+							<input placeholder="email@gmail.com" type="text" class="videopart__input">
+							<button class="videopart__button">Получить видео</button>
+							<input class="videopart__checkbox" type="checkbox" id="videopart__checkbox"> 
+							<label class="videopart__checklabel" for="videopart__checkbox">
+								Согласен с политикой конфиденциальности
+							</label>
+						</form>
+					</div>
+					<div class="videopart__mincontainer">
+						<img class="videopart__img" src="img/laptop.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about">
+			<div class="container">
+				<div class="about__cont">
+					<div class="about__firstcont">
+						<div class="about__videocont">
+							<iframe width="510" height="352" src="https://www.youtube.com/embed/YbJOTdZBX1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<img src="img/video.png" alt="#" class="about__videocontimg">
+							<div class="about__play video-button"></div>
+						</div>
+						<ul class="about__aboutsocial aboutsocial">
+								<li class="aboutsocial__item aboutsocial__item_vk">
+									<a href="#" class="aboutsocial__link"></a>
+								</li>
+								<li class="aboutsocial__item aboutsocial__item_fb">
+									<a href="#" class="aboutsocial__link"></a>
+								</li>
+								<li class="aboutsocial__item aboutsocial__item_tw">
+									<a href="#" class="aboutsocial__link"></a>
+								</li>
+							</ul>
+							<span class="about__socialdesc">Интервью Анастасии Богдановой</span>
+						</div>
+					<div class="about__descript">
+						<h3 class="about__caption">О школе</h3>
+						<p class="about__text1">Наша школа – это место, где становятся 
+не просто хорошими массажистами, 
+а настоящими мастерами</p>
+						<p class="about__text2">Мастерство состоит не только в виртуозном владении техникой. Это намного более широкое понимание и себя, и профессии, и себя в профессии. Диагностика, анализ, выбор решения, действие – вот алгоритм которым пользуется мастер. </p>
+						<a class="about__learnmore">Познакомиться ближе</a>
+					</div>
+						
+						
+				</div>
+				<ul class="about__advant advant">
+					<li class="advant__item advant__item_advant1">
+						<span class="advant__text">
+							Профессиональный подход к обучению
+						</span>
+					</li>
+					<li class="advant__item advant__item_advant2">
+						<span class="advant__text">
+							Комплексная подача материала: теория + практика.
+						</span>
+					</li>
+					<li class="advant__item advant__item_advant3">
+						<span class="advant__text">
+							Возможность стажировки
+						</span>
+					</li>
+					<li class="advant__item advant__item_advant4">
+						<span class="advant__text">
+							Менторское сопровождение выпускников
+						</span>
+					</li>
+					<li class="advant__item advant__item_advant5">
+	
+						<span class="advant__text">
+							Сертификат
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gifts">
+			<div class="container">
+				<span class="gifts__precaption">Только до 20 августа</span>
+				<h3 class="gifts__caption">Дарим подарки посетителям сайта!</h3>
+				<span class="gifts__step">Шаг 1. Выберите подарок</span>
+				<ul class="gifts__giftslist giftlist">
+					<li class="giftlist__item">
+						<input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox1">
+						<label class="giftlist__label" for="giftlist_checkbox1">
+							<span class="giftlist__percent">15%</span>
+							<span class="giftlist__gift"></span>
+							<span class="giftlist__text">Скидка 15% 
+Методика проведения занятий 
+для беременных</span>
+							<span class="giftlist__choice">Выбрать</span>
+							<span class="giftlist__checked">Выбрано</span>
+						</label>
+					</li>
+					<li class="giftlist__item">
+						<input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox2">
+						<label class="giftlist__label" for="giftlist_checkbox2">
+							<span class="giftlist__percent">15%</span>
+							<span class="giftlist__gift"></span>
+							<span class="giftlist__text">Скидка 15% 
+Методика проведения занятий 
+для беременных</span>
+							<span class="giftlist__choice">Выбрать</span>
+							<span class="giftlist__checked">Выбрано</span>
+						</label>
+					</li>
+					<li class="giftlist__item">
+						<input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox3">
+						<label class="giftlist__label" for="giftlist_checkbox3">
+							<span class="giftlist__percent">15%</span>
+							<span class="giftlist__gift"></span>
+							<span class="giftlist__text">Скидка 15% 
+Методика проведения занятий 
+для беременных</span>
+							<span class="giftlist__choice">Выбрать</span>
+							<span class="giftlist__checked">Выбрано</span>
+						</label>
+					</li>
+				</ul>
+				<ul class="giftlist__navigation giftlist__navigation_hidden navigation">
+					<li class="navigation__item"></li>
+					<li class="navigation__item navigation__item_active"></li>
+					<li class="navigation__item"></li>
+					<li class="navigation__item"></li>
+					<li class="navigation__item"></li>
+				</ul>
+				<span class="gifts__step">Шаг 2. Введите данные получателя</span>
+				<form action="#" class="gifts__form">
+					<input type="text" class="gifts__input" placeholder="Ваше имя">
+					<input type="text" class="gifts__input" placeholder="+7 (_ _  _) _ _ _  _ _  _ _">
+					<input type="text" class="gifts__input" placeholder="denis@getcraftwork.com">
+					<button class="gifts__button">Получить подарок</button>
+				</form>
+			</div>
+		</div>
+		<div class="master">
+			<div class="container">
+				<div class="master__container">
+					<div class="master__mincontainer">
+						<div class="master__aboutcont">
+							<span class="master__about">Специализация: <span class="master__about master__about_black">Массаж Греческий</span></span>
+							<span class="master__about">Инстаграм: <a class="master__about master__about_link"> @mr_karyagin77</a></span>
+						</div>
+						<div class="master__aboutcont">
+							<span class="master__about"> Курс: <span class="master__about master__about_black">Массаж-Мастер</span></span>
+
+							<span class="master__about">Результат: <span class="master__about master__about_black">0 > 150.000 рублей</span></span>
+						</div>
+							<div class="master__descript scrollbar-inner">
+							<p class="master__text">Обычное московское утро, поздняя осень. Начинаю семинар. Как обычно знакомлюсь с учениками. Обычные люди, кто-то моложе, кто то старше, кто с опытом, кто первый раз встречается с профессиональным массажем, в общем все как всегда. 
+
+Стандартно. Среди учеников совсем молоденький парнишка лет 20-ти который скромно сказал, что только начинает постигать профессию массажиста. 
+
+Семинар прошел, что называется, на одном дыхании. Знаете, когда не замечаешь времени. Все динамично, без занудства. Закончили, расставались – плакали Все обычно говорят, что теперь только к вам, нам так понравилось и все такое… И парнишка тоже вроде бы как собирается продолжать обучение. Через пару недель опять начи
+
+Обычное московское утро, поздняя осень. Начинаю семинар. Как обычно знакомлюсь с учениками. Обычные люди, кто-то моложе, кто то старше, кто с опытом, кто первый раз встречается с профессиональным массажем, в общем все как всегда. 
+
+Стандартно. Среди учеников совсем молоденький парнишка лет 20-ти который скромно сказал, что только начинает постигать профессию массажиста. 
+
+Семинар прошел, что называется, на одном дыхании. Знаете, когда не замечаешь времени. Все динамично, без занудства. Закончили, расставались – плакали Все обычно говорят, что теперь только к вам, нам так понравилось и все такое… И парнишка тоже вроде бы как собирается продолжать обучение. Через пару недель опять начи
+							</p>
+						</div>
+					</div>
+					<div class="master__mincontainer">
+						<img src="img/master.png" alt="" class="master__img">
+						<span class="master__imgdesc">Анлегина Иванеева, 28 лет: мастер-юга</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blog">
+			<div class="container">
+			<h3 class="blog__caption">Новое в блоге</h3>
+				<a href="#" class="blog__link"></a>
+				<ul class="blog__bloglist bloglist">
+					<li class="bloglist__item">
+						<div class="bloglist__imgcont">
+							<img src="img/blog1.png" alt="" class="bloglist__img">
+						</div>
+						<div class="bloglist__descriptcont">
+							<span class="bloglist__date">17 апреля 2017</span>
+							<span class="bloglist__nameitem">Разновидности продольного и поперечного разминания</span>
+							<span class="bloglist__description"></span>
+						</div>
+					</li>
+					<li class="bloglist__item">
+						<div class="bloglist__imgcont">
+							<img src="img/blog3.png" alt="" class="bloglist__img">
+						</div>
+						<div class="bloglist__descriptcont">
+							<span class="bloglist__date">17 апреля 2017</span>
+							<span class="bloglist__nameitem">Разновидности продольного и поперечного разминания</span>
+							<span class="bloglist__description"></span>
+						</div>
+					</li>
+					<li class="bloglist__item">
+						<div class="bloglist__imgcont">
+							<img src="img/blog4.png" alt="" class="bloglist__img">
+						</div>
+						<div class="bloglist__descriptcont">
+							<span class="bloglist__date">18 апреля 2017</span>
+							<span class="bloglist__nameitem">Визуальная оценка при медицинском осмотре</span>
+							<span class="bloglist__description"></span>
+						</div>
+					</li>
+					<li class="bloglist__item">
+						<div class="bloglist__imgcont">
+							<img src="img/blog4.png" alt="" class="bloglist__img">
+						</div>
+						<div class="bloglist__descriptcont">
+							<span class="bloglist__date">18 апреля 2017</span>
+							<span class="bloglist__nameitem">Визуальная оценка при медицинском осмотре</span>
+							<span class="bloglist__description"></span>
+						</div>
+					</li>
+					<li class="bloglist__item">
+						<div class="bloglist__imgcont">
+							<img src="img/blog-round.png" alt="" class="bloglist__img">
+						</div>
+						<div class="bloglist__descriptcont">
+							<span class="bloglist__date">17 апреля 2017</span>
+							<span class="bloglist__nameitem">Разновидности продольного и поперечного разминания</span>
+							<span class="bloglist__description">Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. </span>
+						</div>
+					</li>
+				</ul>
+				<ul class="bloglist__navigation bloglist__navigation_hidden navigation">
+					<li class="navigation__item"></li>
+					<li class="navigation__item navigation__item_active"></li>
+					<li class="navigation__item"></li>
+					<li class="navigation__item"></li>
+					<li class="navigation__item"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="subscription">
+			<div class="container">
+				<h3 class="subscription__caption">Подпишись на нашу рассылку и узнай о самых последних кампаниях, в которых ты можешь принять участие!</h3>
+				<form action="#" class="subscription__form">
+					<input type="text" class="subscription__input" placeholder="Ваше имя">
+					<input type="text" class="subscription__input" placeholder="+7 (_ _  _) _ _ _  _ _  _ _">
+					<input type="text" class="subscription__input" placeholder="Email">
+					<button class="subscription__button">Пoдписаться</button>
+					<input class="subscription__checkbox" type="checkbox" id="subscription__checkbox"> 
+						<label class="subscription__checklabel" for="subscription__checkbox">
+							Согласен с политикой конфиденциальности
+						</label>
+				</form>
+			</div>
+		</div>
+		<div class="contacts">
+			<div class="container">
+				<h3 class="contacts__caption">Контакты</h3>
+				<div class="contacts__container">
+					<div class="contacts__containermin">
+						<span class="contacts__quest">Задать вопрос</span>
+						<form class="contacts__form" action="#">
+							<input type="text" class="contacts__input" placeholder="Ваше имя">
+							<input type="text" class="contacts__input" placeholder="denis@getcraftwork.com">
+							<textarea class="contacts__input contacts__input_message" placeholder="Сообщение"></textarea>
+							<input class="contacts__checkbox" type="checkbox" id="contacts__checkbox"> 
+							<label class="contacts__checklabel" for="contacts__checkbox">Согласен с политикой конфиденциальности
+							</label>
+							<button class="contacts__button">Задать вопрос</button>
+						</form>
+					</div>
+					<div class="contacts__containermin">
+						<div class="contacts__descript">
+							<span class="contacts__mincaption">Телефон</span>
+							<span class="contacts__phonenumber">8 800 456 45 59</span>
+						</div>
+						<div class="contacts__descript">
+							<span class="contacts__mincaption">Реквизиты</span>
+							<ul class="contacts__reqcont">
+								<li class="contacts__reqitem">
+									<span class="contacts__req">Наименование</span>
+									<span class="contacts__value">ИП Умарнова Светлана Петровна</span>
+								</li>
+								<li class="contacts__reqitem">
+									<span class="contacts__req">Адрес:</span>
+									<span class="contacts__value">625000, Тюменская обл, г Тюмень</span>
+								</li>
+								<li class="contacts__reqitem">
+									<span class="contacts__req">ИНН / ОГРН</span>
+									<span class="contacts__value">720408048498 / 312723219200027</span>
+								</li>
+								<li class="contacts__reqitem">
+									<span class="contacts__req">Дата регистрации</span>
+									<span class="contacts__value">10.07.2012</span>
+								</li>
+							</ul>
+						</div>	
+						<ul class="contacts__contactssocial contactssocial">
+							<li class="contactssocial__item">
+								<a href="#" class="contactssocial__link contactssocial__link_vk"></a>
+							</li>
+							<li class="contactssocial__item">
+								<a href="#" class="contactssocial__link contactssocial__link_fb"></a>
+							</li>
+							<li class="contactssocial__item">
+								<a href="#" class="contactssocial__link contactssocial__link_ok"></a>
+							</li>
+							<li class="contactssocial__item">
+								<a href="#" class="contactssocial__link contactssocial__link_gl"></a>
+							</li>
+							<li class="contactssocial__item">
+								<a href="#" class="contactssocial__link contactssocial__link_tw"></a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</main>
+	<div class="back"></div>
+	<ul class="contactssocial contactssocial_fixed contactssocial_main">
+		<li class="contactssocial__item">
+			<a href="#" class="contactssocial__link contactssocial__link_vk"></a>
+		</li>
+		<li class="contactssocial__item">
+			<a href="#" class="contactssocial__link contactssocial__link_fb"></a>
+		</li>
+		<li class="contactssocial__item">
+			<a href="#" class="contactssocial__link contactssocial__link_ok"></a>
+		</li>
+		<li class="contactssocial__item">
+			<a href="#" class="contactssocial__link contactssocial__link_gl"></a>
+		</li>
+		<li class="contactssocial__item">
+			<a href="#" class="contactssocial__link contactssocial__link_tw"></a>
+		</li>
+	</ul>
+	<div class="back"></div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>

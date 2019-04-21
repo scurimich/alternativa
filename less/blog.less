@@ -1,0 +1,387 @@
+.blogsite {
+	overflow: hidden;
+	padding: 90px 0 95px;
+	position: relative;
+
+	@media (max-width: 1190px) {
+		padding: 49px 0 59px;
+	}
+
+	@media (max-width: 780px) {
+		padding: 20px 0 8px 0;
+	}
+
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+
+		@media (max-width: 1190px) {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	&__caption {
+		margin: 0;
+		text-align: left;
+		font-family: 'roboto';
+		font-size: 90px;
+		font-weight: 900;
+		color: #fff;
+		text-transform: uppercase;
+		white-space: pre-wrap;
+		line-height: 56px;
+		margin-bottom: 28px;
+		margin-left: -3px;
+
+		@media (max-width: 1190px) {
+			margin-bottom: 39px;
+		}
+
+		@media (max-width: 780px) {
+			font-size: 27px;
+			font-weight: 400;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__text {
+		font-family: 'roboto';
+		font-size: 20px;
+		font-weight: 300;
+		color: #fff;
+		display: inline-block;
+		margin-right: 33px;
+		width: 460px;
+		line-height: 28px;
+
+		@media (max-width: 780px) {
+			font-size: 14px;
+			width: 260px;
+			line-height: 21px;	
+			margin-bottom: 7px;
+			margin-left: -2px;	
+		}
+	}
+}
+
+.newblog {
+	background-color: #e9ebec;
+	padding: 51px 0 42px 0;
+
+	@media (max-width: 1190px) {
+		padding: 32px 0 51px 0;
+	}
+
+	@media (max-width: 780px) {
+		padding: 19px 0 32px 0;
+	}
+
+	&__caption {
+		font-family: 'roboto';
+		font-size: 46px;
+		font-weight: 300;
+		color: #000;
+		text-align: left;
+		margin: 0;
+		margin-bottom: 25px;
+		display: inline-block;
+
+		@media (max-width: 780px) {
+			font-size: 16px;
+			font-weight: 300;
+			margin-bottom: 26px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		vertical-align: top;
+		width: 27px;
+		height: 27px;
+		margin: 18px 0 -4px 25px;
+		background: url(../img/arrow-orange.png) no-repeat;
+
+		@media (max-width: 780px) {
+			vertical-align: top;
+			background-size: 100%;
+			width: 14px;
+			height: 14px;
+			margin: 3px 0 -4px 12px; 
+		}
+	}
+
+	&__cont {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 2px 0 0;
+	}
+
+	&__contmin {
+		width: 374px;
+
+		@media (max-width: 780px) {
+			display: none;
+		}
+
+		&:last-child {
+
+			@media (max-width: 1190px) {
+				display: none;
+			}
+			@media (max-width: 780px) {
+				width: 300px;
+				display: block;
+			}
+		}
+
+		&:nth-child(2) {
+
+			.newblog__item {
+
+				@media (max-width: 1190px) {
+					width: 352px;
+				}
+			}
+		}
+	}
+
+	&__item {
+		margin-bottom: 24px;
+		border-radius: 10px;
+		position: relative;
+		width: 377px;
+		padding-top: 118px;
+		overflow: hidden;
+		box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.5);
+		z-index: 1;
+		text-align: left;
+
+			@media (max-width: 1190px) {
+				width: 340px;
+				margin-bottom: 18px;
+			}
+
+			@media (max-width: 780px) {
+				width: 300px;
+				padding-top: 119px;
+				margin-bottom: 14px;
+			}
+
+		&_large {
+			padding-top: 38px;
+			text-align: center;
+			background-color: #fff;
+			margin-bottom: 20px;
+
+			.newblog__imgcont {
+				position: static;
+				margin-bottom: 0;
+				display: inline-block;
+				text-align: center;
+				border-radius: 50%;
+				width: 172px;
+				height: 172px;
+				box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+				margin-bottom: 5px;
+
+			}
+
+			.newblog__img {
+				width: auto;
+			}
+
+			.newblog__nameitem{
+				margin: 5px 0 21px 0;
+			}
+
+			.newblog__description {
+				margin-top: 14px;
+				padding: 0 15px 0 15px;
+			}
+		}
+	}
+
+	&__descriptcont {
+		margin-left: 25px;
+		margin: 23px 25px 27px 24px;
+	}
+
+	&__date {
+		display: block;
+		font-family: 'roboto';
+		font-size: 	12px;
+		font-weight: 400;
+		color: #666;
+		text-transform: uppercase;
+	}
+
+	&__nameitem {
+		display: block;
+		font-family: 'roboto';
+		font-size: 	20px;
+		font-weight: 300;
+		color: #000;
+		margin-top: 3px;
+		line-height: 28px;
+		margin-bottom: 21px;
+	}
+
+	&__description {
+		display: block;
+		font-family: 'roboto';
+		font-size: 	15px;
+		font-weight: 300;
+		color: #000;
+		line-height: 24px;
+	}
+
+	&__imgcont {
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__about {
+		padding: 23px 26px 14px 26px;
+		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 0 0 10px 10px;
+		overflow: hidden;
+
+		@media (max-width: 780px) {
+			padding: 22px 26px 18px 9px;	
+		}
+	}
+
+	&__date {
+		font-family: 'roboto';
+		font-size: 12px;
+		font-weight: 500;
+		color: #666;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-family: 'roboto';
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #000;
+		margin: 3px 0 17px 0;
+
+		@media (max-width: 780px) {
+			font-size: 15px;
+			margin: 4px 0 17px 0;	
+		}
+	}
+
+	&__hashtag {
+		display: inline-block;
+		font-family: 'roboto';
+		font-size: 15px;
+		font-weight: 300;
+		color: @orange;
+		text-decoration: none;
+		margin-right: 12px;
+		margin-top: -4px;
+		vertical-align: top;
+
+		@media (max-width: 780px) {
+			font-size: 13px;	
+			margin-right: 7px;
+		}
+	}
+
+	&__views {
+		font-family: 'roboto';
+		font-size: 12px;
+		font-weight: 500;
+		color: #666;
+		vertical-align: top;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 16px;
+			height: 11px;
+			background: url(../img/eye.png);
+			margin-right: 10px;
+			margin-bottom: 1px;
+
+			@media (max-width: 780px) {
+				margin-bottom: 4px;
+			}
+
+		}
+	}
+
+	&__text {
+		margin: 6px 0 6px 0;
+		font-family: 'roboto';
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 300;
+		color: #000;
+
+		@media (max-width: 780px) {
+			font-size: 12px;
+			margin: 3px 0 6px 0;	
+		}
+	}
+
+	&__loading {
+		display: block;
+		font-family: 'roboto';
+		font-size: 15px;
+		color: @orange;
+		font-weight: 300;
+		vertical-align: top;
+		margin-top: 19px;
+		text-align: center;
+
+			@media (max-width: 1190px) {
+				margin-top: 24px;
+			}
+
+			@media (max-width: 780px) {
+				margin-top: 26px;
+			}
+
+		&:before {
+			content: '';
+			width: 33px;
+			height: 32px;
+			background: url(../img/round-arrow.png);
+			display: inline-block;
+			margin-right: 13px;
+			vertical-align: top;
+			margin-top: -8px;
+			animation-name: load;
+			animation-iteration-count: infinite;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+		}
+
+		@keyframes load {
+			0% {
+				transform: rotate(0);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+}
