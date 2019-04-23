@@ -74,7 +74,7 @@
 					<li class="navigation__item slider-nav-button"></li>
 					<li class="navigation__item slider-nav-button"></li>
 				</ul>
-				<div class="events__container slider" data-slides="events" data-number="3">
+				<div class="events__container slider" data-slides="events" data-number="3" data-adapt="true">
 					<ul class="events__eventlist eventlist slides">
 						<li class="eventlist__item slide">
 							<div class="eventlist__imgcont">
@@ -177,12 +177,16 @@
 						</li>
 					</ul>
 				</div>
-				<ul class="events__navigation events__navigation_hidden navigation">
-					<li class="navigation__item"></li>
-					<li class="navigation__item navigation__item_active"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
+				<ul class="events__navigation events__navigation_hidden navigation slider-nav" data-slider="events">
+					<li class="navigation__item slider-nav-button active"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
 				</ul>
 			</div>
 		</div>
@@ -277,51 +281,51 @@
 			<div class="container">
 				<span class="gifts__precaption">Только до 20 августа</span>
 				<h3 class="gifts__caption">Дарим подарки посетителям сайта!</h3>
-				<span class="gifts__step">Шаг 1. Выберите подарок</span>
-				<ul class="gifts__giftslist giftlist">
-					<li class="giftlist__item">
-						<input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox1">
-						<label class="giftlist__label" for="giftlist_checkbox1">
-							<span class="giftlist__percent">15%</span>
-							<span class="giftlist__gift"></span>
-							<span class="giftlist__text">Скидка 15% 
+        <span class="gifts__step">Шаг 1. Выберите подарок</span>
+        <div class="gifts__container slider" data-slides="gifts" data-adapt="true">
+          <ul class="gifts__giftslist giftlist slides">
+            <li class="giftlist__item slide">
+              <input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox1">
+              <label class="giftlist__label" for="giftlist_checkbox1">
+                <span class="giftlist__percent">15%</span>
+                <span class="giftlist__gift"></span>
+                <span class="giftlist__text">Скидка 15% 
 Методика проведения занятий 
 для беременных</span>
-							<span class="giftlist__choice">Выбрать</span>
-							<span class="giftlist__checked">Выбрано</span>
-						</label>
-					</li>
-					<li class="giftlist__item">
-						<input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox2">
-						<label class="giftlist__label" for="giftlist_checkbox2">
-							<span class="giftlist__percent">15%</span>
-							<span class="giftlist__gift"></span>
-							<span class="giftlist__text">Скидка 15% 
+                <span class="giftlist__choice">Выбрать</span>
+                <span class="giftlist__checked">Выбрано</span>
+              </label>
+            </li>
+            <li class="giftlist__item slide">
+              <input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox2">
+              <label class="giftlist__label" for="giftlist_checkbox2">
+                <span class="giftlist__percent">15%</span>
+                <span class="giftlist__gift"></span>
+                <span class="giftlist__text">Скидка 15% 
 Методика проведения занятий 
 для беременных</span>
-							<span class="giftlist__choice">Выбрать</span>
-							<span class="giftlist__checked">Выбрано</span>
-						</label>
-					</li>
-					<li class="giftlist__item">
-						<input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox3">
-						<label class="giftlist__label" for="giftlist_checkbox3">
-							<span class="giftlist__percent">15%</span>
-							<span class="giftlist__gift"></span>
-							<span class="giftlist__text">Скидка 15% 
+                <span class="giftlist__choice">Выбрать</span>
+                <span class="giftlist__checked">Выбрано</span>
+              </label>
+            </li>
+            <li class="giftlist__item slide">
+              <input type="checkbox" class="giftlist__checkbox" id="giftlist_checkbox3">
+              <label class="giftlist__label" for="giftlist_checkbox3">
+                <span class="giftlist__percent">15%</span>
+                <span class="giftlist__gift"></span>
+                <span class="giftlist__text">Скидка 15% 
 Методика проведения занятий 
 для беременных</span>
-							<span class="giftlist__choice">Выбрать</span>
-							<span class="giftlist__checked">Выбрано</span>
-						</label>
-					</li>
-				</ul>
-				<ul class="giftlist__navigation giftlist__navigation_hidden navigation">
-					<li class="navigation__item"></li>
-					<li class="navigation__item navigation__item_active"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
+                <span class="giftlist__choice">Выбрать</span>
+                <span class="giftlist__checked">Выбрано</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+				<ul class="giftlist__navigation giftlist__navigation_hidden navigation slider-nav" data-slider="gifts">
+					<li class="navigation__item slider-nav-button active"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
 				</ul>
 				<span class="gifts__step">Шаг 2. Введите данные получателя</span>
 				<form action="#" class="gifts__form">
@@ -370,65 +374,67 @@
 		<div class="blog">
 			<div class="container">
 			<h3 class="blog__caption">Новое в блоге</h3>
-				<a href="#" class="blog__link"></a>
-				<ul class="blog__bloglist bloglist">
-					<li class="bloglist__item">
-						<div class="bloglist__imgcont">
-							<img src="img/blog1.png" alt="" class="bloglist__img">
-						</div>
-						<div class="bloglist__descriptcont">
-							<span class="bloglist__date">17 апреля 2017</span>
-							<a class="bloglist__nameitem">Разновидности продольного и поперечного разминания</a>
-							<span class="bloglist__description"></span>
-						</div>
-					</li>
-					<li class="bloglist__item">
-						<div class="bloglist__imgcont">
-							<img src="img/blog3.png" alt="" class="bloglist__img">
-						</div>
-						<div class="bloglist__descriptcont">
-							<span class="bloglist__date">17 апреля 2017</span>
-							<a class="bloglist__nameitem">Разновидности продольного и поперечного разминания</a>
-							<span class="bloglist__description"></span>
-						</div>
-					</li>
-					<li class="bloglist__item">
-						<div class="bloglist__imgcont">
-							<img src="img/blog4.png" alt="" class="bloglist__img">
-						</div>
-						<div class="bloglist__descriptcont">
-							<span class="bloglist__date">18 апреля 2017</span>
-							<a class="bloglist__nameitem">Визуальная оценка при медицинском осмотре</a>
-							<span class="bloglist__description"></span>
-						</div>
-					</li>
-					<li class="bloglist__item">
-						<div class="bloglist__imgcont">
-							<img src="img/blog4.png" alt="" class="bloglist__img">
-						</div>
-						<div class="bloglist__descriptcont">
-							<span class="bloglist__date">18 апреля 2017</span>
-							<a class="bloglist__nameitem">Визуальная оценка при медицинском осмотре</a>
-							<span class="bloglist__description"></span>
-						</div>
-					</li>
-					<li class="bloglist__item">
-						<div class="bloglist__imgcont">
-							<img src="img/blog-round.png" alt="" class="bloglist__img">
-						</div>
-						<div class="bloglist__descriptcont">
-							<span class="bloglist__date">17 апреля 2017</span>
-							<a class="bloglist__nameitem">Разновидности продольного и поперечного разминания</a>
-							<span class="bloglist__description">Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. </span>
-						</div>
-					</li>
-				</ul>
-				<ul class="bloglist__navigation bloglist__navigation_hidden navigation">
-					<li class="navigation__item"></li>
-					<li class="navigation__item navigation__item_active"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
+        <a href="#" class="blog__link"></a>
+        <div class="blog__container slider" data-slides="blog" data-adapt="true">
+          <ul class="blog__bloglist bloglist slides">
+            <li class="bloglist__item slide">
+              <div class="bloglist__imgcont">
+                <img src="img/blog1.png" alt="" class="bloglist__img">
+              </div>
+              <div class="bloglist__descriptcont">
+                <span class="bloglist__date">17 апреля 2017</span>
+                <a class="bloglist__nameitem">Разновидности продольного и поперечного разминания</a>
+                <span class="bloglist__description"></span>
+              </div>
+            </li>
+            <li class="bloglist__item slide">
+              <div class="bloglist__imgcont">
+                <img src="img/blog3.png" alt="" class="bloglist__img">
+              </div>
+              <div class="bloglist__descriptcont">
+                <span class="bloglist__date">17 апреля 2017</span>
+                <a class="bloglist__nameitem">Разновидности продольного и поперечного разминания</a>
+                <span class="bloglist__description"></span>
+              </div>
+            </li>
+            <li class="bloglist__item slide">
+              <div class="bloglist__imgcont">
+                <img src="img/blog4.png" alt="" class="bloglist__img">
+              </div>
+              <div class="bloglist__descriptcont">
+                <span class="bloglist__date">18 апреля 2017</span>
+                <a class="bloglist__nameitem">Визуальная оценка при медицинском осмотре</a>
+                <span class="bloglist__description"></span>
+              </div>
+            </li>
+            <li class="bloglist__item slide">
+              <div class="bloglist__imgcont">
+                <img src="img/blog4.png" alt="" class="bloglist__img">
+              </div>
+              <div class="bloglist__descriptcont">
+                <span class="bloglist__date">18 апреля 2017</span>
+                <a class="bloglist__nameitem">Визуальная оценка при медицинском осмотре</a>
+                <span class="bloglist__description"></span>
+              </div>
+            </li>
+            <li class="bloglist__item slide">
+              <div class="bloglist__imgcont">
+                <img src="img/blog-round.png" alt="" class="bloglist__img">
+              </div>
+              <div class="bloglist__descriptcont">
+                <span class="bloglist__date">17 апреля 2017</span>
+                <a class="bloglist__nameitem">Разновидности продольного и поперечного разминания</a>
+                <span class="bloglist__description">Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+				<ul class="bloglist__navigation bloglist__navigation_hidden navigation slider-nav" data-slider="blog">
+					<li class="navigation__item slider-nav-button active"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
 				</ul>
 			</div>
 		</div>

@@ -1304,12 +1304,12 @@
 		@media (max-width: 1190px) {
 			width: 377px;
 			margin: 0 auto;
-			overflow: hidden;
-		}
+      overflow: hidden;
+      position: relative;
+    }
+
 		@media (max-width: 780px) {
 			width: 100%;
-			margin: 0 auto;
-			overflow: hidden;
 		}
 	}
 
@@ -1319,6 +1319,9 @@
 		margin: 0;
 		display: flex;
 		justify-content: space-between;
+    position: relative;
+    left: 0;
+    transition: 1s;
 	}
 
 	&__item {
@@ -1330,7 +1333,8 @@
 		overflow: hidden;
 		position: relative;
 		left: 0;
-		margin-bottom: 32px;
+    margin-bottom: 32px;
+    margin-right: 10px;
 		box-shadow: 1px 18px 43px rgba(0, 0, 0, 0.2);
 
 		@media (max-width: 1190px) {
@@ -1415,7 +1419,9 @@
 			}
 
 			@media (max-width: 780px) {
-				margin: -9px -12px 0 0
+				margin: -9px -12px 0 0;
+        position: relative;
+        z-index: 2;
 			}
 
 			.navigation__item {
@@ -1732,6 +1738,10 @@
 				align-items: center;
 				width: 100%;
 				margin: 12px 0 0 0;
+
+        .navigation__item {
+          margin: 0 5px 0 5px;
+        }
 			}
 		}
 	}
