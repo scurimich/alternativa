@@ -106,7 +106,7 @@
 			<div class="common__cont">
 				<div class="common__firstcont">
 					<div class="common__videocont">
-						<iframe src="https://www.youtube.com/embed/a3TJUeG2_eA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/YbJOTdZBX1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						<img src="img/program-video.png" alt="#" class="common__videocontimg">
 						<div class="common__play"></div>
 					</div>
@@ -260,41 +260,43 @@
 		<div class="morecourses">
 			<div class="container">
 				<h2 class="morecourses__caption">Еще курсы на которое стоит обратить внимание</h2>
-				<ul class="morecourses__list">
-					<li class="morecourses__item">
-						<a href="#" class="morecourses__link">
-							<div class="morecourses__imgcont">
-								<img src="img/event1.png" alt="" class="morecourses__img">	
-							</div>
-							<div class="morecourses__about">
-								<span class="morecourses__captionmin">Курс по молодому специалисту 
-	как поменять себя</span>
-							</div>
-						</a>
-					</li>
-					<li class="morecourses__item">
-						<a href="#" class="morecourses__link">
-							<div class="morecourses__imgcont">
-								<img src="img/event1.png" alt="" class="morecourses__img">
-							</div>
-							<div class="morecourses__about">
-								<span class="morecourses__captionmin">Курс по молодому специалисту 
+				<div class="morecourses__container">
+					<ul class="morecourses__list">
+						<li class="morecourses__item">
+							<a href="#" class="morecourses__link">
+								<div class="morecourses__imgcont">
+									<img src="img/event1.png" alt="" class="morecourses__img">	
+								</div>
+								<div class="morecourses__about">
+									<span class="morecourses__captionmin">Курс по молодому специалисту 
 		как поменять себя</span>
-							</div>
-						</a>
-					</li>
-					<li class="morecourses__item">
-						<a href="#" class="morecourses__link">
-							<div class="morecourses__imgcont">
-								<img src="img/event1.png" alt="" class="morecourses__img">
-							</div>
-							<div class="morecourses__about">
-								<span class="morecourses__captionmin">Курс по молодому специалисту 
-		как поменять себя</span>
-							</div>
-						</a>
-					</li>
-				</ul>
+								</div>
+							</a>
+						</li>
+						<li class="morecourses__item">
+							<a href="#" class="morecourses__link">
+								<div class="morecourses__imgcont">
+									<img src="img/event1.png" alt="" class="morecourses__img">
+								</div>
+								<div class="morecourses__about">
+									<span class="morecourses__captionmin">Курс по молодому специалисту 
+			как поменять себя</span>
+								</div>
+							</a>
+						</li>
+						<li class="morecourses__item">
+							<a href="#" class="morecourses__link">
+								<div class="morecourses__imgcont">
+									<img src="img/event1.png" alt="" class="morecourses__img">
+								</div>
+								<div class="morecourses__about">
+									<span class="morecourses__captionmin">Курс по молодому специалисту 
+			как поменять себя</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
 				<ul class="morecourses__navigation morecourses__navigation_hidden navigation">
 					<li class="navigation__item"></li>
 					<li class="navigation__item navigation__item_active"></li>
@@ -320,15 +322,23 @@
 		<div class="gallery">
 			<div class="container">
 				<h2 class="gallery__caption">ШколаАльтернатива_Фото</h2>
-				<ul class="gallery__navigation navigation">
-					<li class="navigation__item"></li>
-					<li class="navigation__item navigation__item_active"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
-					<li class="navigation__item"></li>
+				<ul class="gallery__navigation navigation slider-nav" data-slider="gallery">
+					<li class="navigation__item slider-nav-button active"></li>
+					<li class="navigation__item slider-nav-button"></li>
+					<li class="navigation__item slider-nav-button"></li>
 				</ul>
-				<div class="gallery__containerimg">
-					<img src="img/gallery.png" alt="" class="gallery__img">
+				<div class="gallery__container slider" data-slides="gallery" data-number="1">
+					<ul class="gallery__list slides">
+						<li class="gallery__containerimg slide">
+							<img src="img/gallery.png" alt="" class="gallery__img">
+						</li>
+						<li class="gallery__containerimg slide">
+							<img src="img/gallery.png" alt="" class="gallery__img">
+						</li>
+						<li class="gallery__containerimg slide">
+							<img src="img/gallery.png" alt="" class="gallery__img">
+						</li>
+					</ul>
 				</div>
 				<ul class="gallery__navigation gallery__navigation_hidden navigation">
 					<li class="navigation__item"></li>
@@ -342,54 +352,153 @@
 			<div class="graduates">
 				<div class="container">
 					<h2 class="graduates__caption">Отзывы выпускников</h2>
-					<ul class="graduates__navigation navigation">
-						<li class="navigation__item"></li>
-						<li class="navigation__item navigation__item_active"></li>
-						<li class="navigation__item"></li>
-						<li class="navigation__item"></li>
-						<li class="navigation__item"></li>
+					<ul class="graduates__navigation navigation slider-nav" data-slider="reviews">
+						<li class="navigation__item slider-nav-button active"></li>
+						<li class="navigation__item slider-nav-button"></li>
+						<li class="navigation__item slider-nav-button"></li>
+						<li class="navigation__item slider-nav-button"></li>
 					</ul>
-					<ul class="graduates__list">
-						<li class="graduates__item">
-							<div class="graduates__imgcont">
-								<img src="img/graduate1.png" alt="" class="graduates__img">
-							</div>
-							<a href="#" class="graduates__link"></a>
-							<h4 class="graduates__name">Смирнова Елена</h4>
-							<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
-							<p class="graduates__descript">
-								Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
-							</p>
-						</li>
-						<li class="graduates__item">
-							<div class="graduates__imgcont">
-								<img src="img/graduate2.png" alt="" class="graduates__img">
-							</div>
-							<a href="#" class="graduates__link"></a>
-							<h4 class="graduates__name">Василий Петров</h4>
-							<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
-							<p class="graduates__descript">
-								Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
-							</p>
-						</li>
-						<li class="graduates__item">
-							<div class="graduates__imgcont">
-								<img src="img/graduate3.png" alt="" class="graduates__img">
-							</div>
-							<a href="#" class="graduates__link"></a>
-							<h4 class="graduates__name">Кравцова Виктория</h4>
-							<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
-							<p class="graduates__descript">
-								Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
-							</p>
-						</li>
-					</ul>
-					<ul class="graduates__navigation navigation graduates__navigation_hidden">
-						<li class="navigation__item"></li>
-						<li class="navigation__item navigation__item_active"></li>
-						<li class="navigation__item"></li>
-						<li class="navigation__item"></li>
-						<li class="navigation__item"></li>
+					<div class="graduates__container slider" data-slides="reviews" data-number="3">
+						<ul class="graduates__list slides">
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate1.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Смирнова Елена</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate2.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Василий Петров</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate3.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Кравцова Виктория</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate1.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Смирнова Елена</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate2.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Василий Петров</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate3.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Кравцова Виктория</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate1.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Смирнова Елена</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate2.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Василий Петров</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate3.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Кравцова Виктория</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate1.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Смирнова Елена</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate2.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Василий Петров</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+							<li class="graduates__item slide">
+								<div class="graduates__imgcont">
+									<img src="img/graduate3.png" alt="" class="graduates__img">
+								</div>
+								<a href="#" class="graduates__link"></a>
+								<h4 class="graduates__name">Кравцова Виктория</h4>
+								<span class="graduates__date">17  апреля 2017 – базовый курс инструктора </span>
+								<p class="graduates__descript">
+									Всего в Тайланде 2 самых лучших массажных школы: южная и северная. Южная расположена в центре Бангкока рядом с храмом Ват По. 
+								</p>
+							</li>
+						</ul>
+					</div>
+					<ul class="graduates__navigation navigation graduates__navigation_hidden slider-nav" data-slider="reviews">
+						<li class="navigation__item slider-nav-button active"></li>
+						<li class="navigation__item slider-nav-button"></li>
+						<li class="navigation__item slider-nav-button"></li>
+						<li class="navigation__item slider-nav-button"></li>
 					</ul>
 				</div>
 			</div>
@@ -460,5 +569,6 @@
 <div class="back"></div>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
