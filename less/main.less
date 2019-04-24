@@ -2028,25 +2028,39 @@ input, button, textarea {
 		background: url(../img/arrow-orange.png);
 
 		@media (max-width: 780px) {
-				vertical-align: top;
-				background-size: 100%;
-				width: 14px;
-				height: 14px;
-				margin: 3px 0 -4px 3px; 
-			}
-	}
+      vertical-align: top;
+      background-size: 100%;
+      width: 14px;
+      height: 14px;
+      margin: 3px 0 -4px 3px; 
+    }
+  }
+  
+  &__container {
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 1190px) {
+      margin: -5px;
+      padding: 5px;
+    }
+  }
 }
 
 .bloglist {
-
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	position: relative;
+  left: 0;
+  transition: 1s;
 
+  @media (max-width: 1190px) {
+    position: relative;
+    flex-wrap: nowrap;
+  }
 
 	&__imgcont {
 		overflow: hidden;
@@ -2119,6 +2133,7 @@ input, button, textarea {
 	}
 	
 	&__item {
+    flex-shrink: 0;
 		overflow: hidden;
 		width: 376px;
 		border-radius: 8px;
@@ -2127,80 +2142,24 @@ input, button, textarea {
 		background: linear-gradient(to top, #e9ebec, #fff, #fff);
 
 		@media (max-width: 1190px) {
-				display: none;
-				width: 709px;
-			}
+      width: 709px;
+			margin-right: 10px;
+    }
 
 		&:first-child {
-			display: block;
 			margin-right: 0;
-		}
 
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
+      @media (max-width: 1190px) {
+        margin-right: 10px;
+      }
+    }
+    
+    &:nth-child(2n) {
+      margin-right: 0;
 
-		&:last-child {
-			position: absolute;
-			padding-top: 37px;
-			top: 0;
-			left: 50%;
-			transform: translate(-50%);
-			text-align: center;
-
-			@media (max-width: 1190px) {
-				position: static;
-				display: block;
-				transform: translate(0);
-				width: 709px;
-				margin: 0 auto;
-				margin-top: 70px;
-				padding-top: 26px;
-				box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-				background: none;
-			}
-
-			@media (max-width: 780px) {
-				width: 300px;
-				margin-top: 38px;
-				padding-top: 16px;
-			}
-		}
-
-		&:last-child .bloglist__imgcont {
-			margin-bottom: 0;
-			display: inline-block;
-			text-align: center;
-			border-radius: 50%;
-			width: 172px;
-			height: 172px;
-			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-			margin-bottom: 5px;
-		}
-
-		&:last-child .bloglist__nameitem{
-			margin: 5px 0 16px 0;
-
-			@media (max-width: 1190px) {
-				margin: 7px 0 18px 0;
-				
-			}
-
-			@media (max-width: 780px) {
-				margin: 21px 0 12px 0;
-				width: 280px;
-			}
-		}
-
-		&:last-child .bloglist__descriptcont{
-
-			@media (max-width: 1190px) {
-				margin: 24px 25px 28px 24px;
-			}
-
-			@media (max-width: 780px) {
-				margin: 9px 6px 19px 9px;
-			}
+      @media (max-width: 1190px) {
+        margin-right: 10px;
+      }
 		}
 	}
 
@@ -2227,7 +2186,75 @@ input, button, textarea {
 		@media (max-width: 780px) {
 			top: 258px;
 		}
-	}
+  }
+  
+  &__special-item {
+		overflow: hidden;
+		width: 376px;
+		border-radius: 8px;
+		margin-bottom: 16px;
+		margin-right: 418px;
+    background: linear-gradient(to top, #e9ebec, #fff, #fff);
+    position: absolute;
+    padding-top: 37px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+
+    @media (max-width: 1190px) {
+      position: static;
+      display: block;
+      transform: translate(0);
+      width: 709px;
+      margin: 0 auto;
+      margin-top: 70px;
+      padding-top: 26px;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+      background: none;
+    }
+
+    @media (max-width: 780px) {
+      width: 300px;
+      margin-top: 38px;
+      padding-top: 16px;
+    }
+    
+    .bloglist__imgcont {
+			margin-bottom: 0;
+			display: inline-block;
+			text-align: center;
+			border-radius: 50%;
+			width: 172px;
+			height: 172px;
+			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+			margin-bottom: 5px;
+    }
+
+    .bloglist__nameitem{
+			margin: 5px 0 16px 0;
+
+			@media (max-width: 1190px) {
+				margin: 7px 0 18px 0;
+				
+			}
+
+			@media (max-width: 780px) {
+				margin: 21px 0 12px 0;
+				width: 280px;
+			}
+    }
+
+    .bloglist__descriptcont{
+			@media (max-width: 1190px) {
+				margin: 24px 25px 28px 24px;
+			}
+
+			@media (max-width: 780px) {
+				margin: 9px 6px 19px 9px;
+			}
+		}
+  }
 }
 
 .subscription {
